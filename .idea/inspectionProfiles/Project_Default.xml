@@ -1,0 +1,91 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="141" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="align" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyMethodParametersInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="ubuntu-advantage-tools" />
+            <item index="1" class="java.lang.String" itemvalue="python-apt" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E265" />
+          <option value="E501" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N803" />
+          <option value="N802" />
+          <option value="N801" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnboundLocalVariableInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="contabilidad.views.asientosContab.*" />
+          <option value="contabilidad.bl.contabilidad_helper.asientoHelper.*" />
+          <option value="poliza.bl.Json_poliza_helper.CreacionDePoliza.__getitem__" />
+          <option value="type.without_ui" />
+          <option value="type.with_ui" />
+          <option value="poliza.views.TocarsAPI.method" />
+          <option value="poliza.bl.Json_poliza_helper.CreacionDeCertificado.__getitem__" />
+          <option value="BL.poliza.api_certificado_autc.CreacionDeCertificado.__getitem__" />
+          <option value="BL.poliza.general.PlanDePAgos.*" />
+          <option value="BL.poliza.poliza_auti.CreacionDePoliza.*" />
+          <option value="BL.poliza.certificado_autc.CreacionDeCertificado.__getitem__" />
+          <option value="bl.poliza.tran_certificado.CreacionDeCertificado.__getitem__" />
+          <option value="bl.poliza.acpg_poliza.CreacionDePoliza.__getitem__" />
+          <option value="acpg.views.PolizaView.POST" />
+          <option value="acpg.views.PolizaView.session" />
+          <option value="acpg.views.PolizaView.user" />
+          <option value="acpg.views.PolizaView.method" />
+          <option value="bl.poliza.emai_poliza.CreacionDePoliza.__getitem__" />
+          <option value="bl.poliza.auti_poliza.CreacionDePoliza.__getitem__" />
+          <option value="bl.cliente.cliente_api.ClienteValidation.__getitem__" />
+          <option value="bl.poliza.rctc_poliza.CreacionDePoliza.__getitem__" />
+          <option value="files.views.Files.__setitem__" />
+          <option value="files.views.Files.__getitem__" />
+          <option value="bl.poliza.acpg_poliza.ImpPolizaHelper.idpoliza" />
+          <option value="bl.poliza.acpg_poliza.ImpPolizaHelper.numcarga" />
+          <option value="bl.poliza.acpg_poliza.ImpPolizaHelper.fechainicio" />
+          <option value="bl.poliza.acpg_poliza.ImpPolizaHelper.fechafin" />
+          <option value="bl.poliza.autc_certificado.CreacionDeCertificado.__getitem__" />
+          <option value="bl.poliza.poliza_helper.ValidacionPoliza.__getitem__" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
