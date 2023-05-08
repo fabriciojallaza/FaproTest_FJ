@@ -1,4 +1,5 @@
 import re
+from datetime import datetime
 
 import requests
 from bs4 import BeautifulSoup
@@ -11,6 +12,24 @@ class UFScrapper:
         self.BASE_URL = "https://www.sii.cl/valores_y_fechas/uf/"
 
     def get_uf_value(self, fecha):
+        """
+            Obtiene el valor de la Unidad de Fomento (UF) para una fecha específica.
+
+            Args:
+                fecha (datetime.date or str): Fecha para la que se quiere obtener el valor de la UF. Si se entrega como str, debe
+                estar en formato YYYY-MM-DD.
+
+            Returns:
+                float: Valor de la UF para la fecha especificada.
+
+            Raises:
+                ValueError: Si la respuesta del request no es 200 o si no se encuentra el valor de la UF para la fecha indicada.
+            """
+
+        # Si fecha es str convertir a datetime.date
+        if isinstance(fecha, str):
+            fecha = datetime.strptime(fecha, '%Y-%m-%d').date()
+
         # Realización del request
         url = f"{self.BASE_URL}uf{fecha.year}.htm"
         response = requests.get(url)
@@ -24,6 +43,20 @@ class UFScrapper:
         return uf_value
 
     def find_values_uf(self, html, fecha):
+        """
+            Encuentra el valor de la UF correspondiente a una fecha específica en el HTML de la página de valores de la UF.
+
+            Args:
+                html (bytes): HTML de la página de valores de la UF.
+                fecha (datetime.date): Fecha para la que se quiere encontrar el valor de la UF.
+
+            Returns:
+                float: Valor de la UF para la fecha especificada.
+
+            Raises:
+                ValueError: Si no se encuentra el valor de la UF para la fecha indicada.
+            """
+
         soup = BeautifulSoup(html, 'html.parser')
 
         # Obtener el tag correspondiente al mes requerido
