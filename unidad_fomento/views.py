@@ -1,7 +1,7 @@
 from django.http import JsonResponse
 
-from unidad_fomento.uf_scrapper import UFScrapper
-from unidad_fomento.validations import ValidationsUF
+from unidad_fomento.lib.uf_scrapper import UFScrapper
+from unidad_fomento.lib.validations import ValidationsUF
 
 
 def get_uf_values(request):
@@ -21,4 +21,4 @@ def get_uf_values(request):
     except ValueError as e:
         return JsonResponse({'error': str(e)}, status=500)
 
-    return JsonResponse({'uf': uf_value}, status=200)
+    return JsonResponse({'uf_value': uf_value}, status=200)
