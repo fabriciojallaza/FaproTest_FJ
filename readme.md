@@ -131,7 +131,7 @@ En caso de error, se entrega una respuesta con el código de error y un mensaje 
 ## Diseño de la arquitectura
 La arquitectura de este proyecto sigue un patrón Modelo-Vista-Controlador (MVC), el cual permite separar la lógica de negocios de la lógica de presentación y de la interacción con el usuario.
 
-El modelo es representado por la clase UFScrapper que se encarga de obtener los valores de la UF desde la página web del Banco Central de Chile, mediante técnicas de web scrapping. Además, esta clase utiliza la librería BeautifulSoup para analizar el contenido HTML de la página y extraer la información necesaria.
+El modelo es representado por la clase UFScrapper que se encarga de obtener los valores de la UF desde la página web del SII de Chile, mediante técnicas de web scrapping. Además, esta clase utiliza la librería BeautifulSoup para analizar el contenido HTML de la página y extraer la información necesaria.
 
 La vista es representada por la función get_uf_values en el archivo views.py, que se encarga de recibir las solicitudes HTTP y devolver las respuestas correspondientes. En este caso, se espera una solicitud GET con el parámetro "fecha" que representa la fecha de la UF que se desea obtener. Si la fecha es válida, se llama a la clase UFScrapper para obtener el valor de la UF y se devuelve en un objeto JSON.
 
