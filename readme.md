@@ -2,7 +2,7 @@
 
 ###### Fapro API Test
 
-Este proyecto consiste en una API que permite obtener el valor de la UF (Unidad de Fomento) chilena para una fecha determinada. El valor de la UF es obtenido desde el sitio web del Instituto Nacional de Estadísticas de Chile (INE) mediante web scrapping.
+Este proyecto consiste en una API que permite obtener el valor de la UF (Unidad de Fomento) chilena para una fecha determinada. El valor de la UF es obtenido desde el sitio web del Servicio de Impuestos Internos de Chile (SII) mediante web scrapping.
 
 ## Installation & Run
 Desarrollado bajo el framework Django 4.2.1.
