@@ -5,9 +5,9 @@
 Este proyecto consiste en una API que permite obtener el valor de la UF (Unidad de Fomento) chilena para una fecha determinada. El valor de la UF es obtenido desde el sitio web del Instituto Nacional de Estadísticas de Chile (INE) mediante web scrapping.
 
 ## Installation & Run
-
-### Requerimientos para Windows o Linux
-Requiere Python 3.7 o superior
+Desarrollado bajo el framework Django 4.2.1.
+### Requerimientos para Linux
+Requiere Python 3.7 o superior.
 
 ~~~bash
 sudo apt update
@@ -17,13 +17,26 @@ sudo apt-get install git-all
 sudo apt-get install sqlite3
 ~~~
 
+### Requerimientos para Windows
+Requiere Python 3.7 o superior.
+
+~~~bash
+# Descargar e instalar Python 3.7 o superior
+https://www.python.org/downloads/
+# Descargar e instalar Git
+https://git-scm.com/downloads
+# Descargar e instalar pip
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+# Instalar virtualenv
+pip install virtualenv
+~~~
 
 ### Clonar el repositorio
 
 ~~~bash
 # Mediante protocolo https
 git clone https://github.com/fabriciojallaza/FaproTest_FJ.git
-
 ~~~
 
 ### Create virtualenv
